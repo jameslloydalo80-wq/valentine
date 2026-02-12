@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Invite</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+<h1 class="text-4xl sm:text-5xl font-bold text-center mb-2">💘 Welcome 💘</h1>
+<p class="text-lg sm:text-xl text-center mb-4">kinsa my ganahan nimo ka date?</p>
+
+<input id="from" placeholder="Your name" class="w-full sm:w-72 p-2 mb-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400">
+<input id="to" placeholder="Name of your date" class="w-full sm:w-72 p-2 mb-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400">
+
+<div class="flex flex-col sm:flex-row gap-2 mb-4">
+  <button id="createBtn" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded w-full sm:w-auto">Create QR Code</button>
+  <button id="downloadBtn" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded w-full sm:w-auto">Download QR Code</button>
+</div>
+
+<div id="qrcode" class="mb-4"></div>
+
+<script type="module" src="valentines.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</body>
+</html>
